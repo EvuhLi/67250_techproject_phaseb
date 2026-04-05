@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exhibitions - MonoMuse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+
 </head>
 
-<body>
+<body onload="addYear()">
     <header>
-        <h1>Exhibitions</h1>
         <nav>
+            <img id="logo" src="../static/image.png" alt="MonoMuse Museum Logo">
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
-            <a href="exhibitions.html">Exhibitions</a>
+            <a id="navselected" href="exhibitions.html">Exhibitions</a>
             <a href="tickets.html">Buy Tickets</a>
             <a href="checkout.html">Checkout</a>
         </nav>
@@ -27,7 +33,7 @@
         <p>Explore the evolution of visual art from canvas to screen. Pixels and Paint showcases side-by-side works from traditional painters and digital artists, revealing surprising connections between brushstrokes and binary code. This exhibition celebrates how the tools change but the human desire to create remains the same.</p>
     </div>
      <footer>
-         <p>&copy; 2026 MonoMuse. All rights reserved.</p>
+         <p id="copyYear"></p>
 
     </footer>
 </body>
