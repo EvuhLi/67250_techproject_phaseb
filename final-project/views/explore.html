@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - MonoMuse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header"></header>
+        <nav class="nav_bar">
+            <img id="logo" src="../static/image.png" alt="MonoMuse Museum Logo">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <h1>Explore MonoMuse</h1>
+            <img src="../static/museum.png" alt="MonoMuse Museum Interior showing modern gallery space with white walls and art installations" width="600">
+
+            <h2>About Us</h2>
+            <p><strong>Our Mission:</strong> MonoMuse is dedicated to bridging the worlds of art and technology. We believe that creativity thrives at the intersection of innovation and human expression, and we strive to make that experience accessible to everyone.</p>
+
+            <p><strong>Who We Serve:</strong> MonoMuse welcomes artists, students, families, educators, and curious minds of all ages. Whether you are a seasoned art lover or stepping into a museum for the first time, there is something here for you.</p>
+
+            <p><strong>Our Story:</strong> Founded in 2020 in Pittsburgh, Pennsylvania, MonoMuse began as a small pop-up gallery showcasing local digital artists. What started as a passion project quickly grew into a full-scale museum experience, attracting visitors from across the country.</p>
+
+            <h3>Milestones</h3>
+            <ul>
+                <li>2020 - MonoMuse founded as a pop-up gallery in Pittsburgh</li>
+                <li>2021 - Opened our first permanent exhibition space</li>
+                <li>2022 - Expanded to include interactive and immersive installations</li>
+                <li>2023 - Welcomed our 100,000th visitor</li>
+                <li>2024 - Launched the MonoMuse Student Arts Program</li>
+            </ul>
+
+            <h2>Visit Us</h2>
+            <h3>Hours of Operation</h3>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Tuesday - Friday</td>
+                    <td>10:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>12:00 PM - 5:00 PM</td>
+                </tr>
+            </table>
+
+            <h3>Admission</h3>
+            <p>General admission is $18. Children under 18 enter free. Student and member tickets are also available at $18.</p>
+
+            <h3>Location and Directions</h3>
+            <p>5000 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>We are located in the Oakland neighborhood of Pittsburgh, near the Carnegie Mellon University campus. Street parking and nearby garages are available.</p>
+            <div id="map"></div>
+
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:info@monomuse.org">info@monomuse.org</a></p>
+            <p>Phone: (412) 555-0198</p>
+        </main>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eva Li">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse - a contemporary museum exploring art and technology">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="./static/script.js" defer></script>
+    <title>MonoMuse</title>
+</head>
+
+<body onload="addYear()">
+    <div class="container">
+        <header class="header"></header>
+        <nav class="nav_bar">
+            <img id="logo" src="./static/image.png" alt="MonoMuse Museum Logo">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <h1 id="greeting">Welcome to MonoMuse</h1>
+            <p id="shortIntro">MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology, and human
+                creativity. Through immersive exhibitions, interactive installations, and rotating collections, MonoMuse
+                invites visitors to discover how digital innovation is transforming the way we create, experience, and
+                understand art.</p>
+            <p id="longIntro">Whether you are a first-time visitor or a returning member, our exhibitions offer new
+                perspectives on the role of technology in culture and everyday life. Plan your visit to experience
+                cutting-edge exhibitions, hands-on experiences, and events designed to inspire curiosity and creativity.
+                MonoMuse also hosts workshops, artist talks, and community events throughout the year, making it a hub
+                for learning and engagement. Join us and become part of a growing community that celebrates the
+                fusion of art and innovation.</p>
+            <span id="readMore" class="cta toggle-btn">Read More</span>
+            <span id="readLess" class="cta toggle-btn">Read Less</span>
+            <br>
+            <a class="cta" href="views/buytickets.html">Buy Tickets</a>
+
+            <h2>Plan Your Visit</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Tuesday - Friday</td>
+                    <td>10:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>12:00 PM - 5:00 PM</td>
+                </tr>
+            </table>
+
+            <h2>Support MonoMuse</h2>
+            <p>MonoMuse relies on the generosity of visitors and community members to continue offering free programming, student workshops, and rotating exhibitions. There are several ways you can help:</p>
+            <h3>Membership</h3>
+            <p>Become a MonoMuse member and enjoy unlimited free admission, early access to new exhibitions, exclusive event invitations, and a 10% discount at the museum shop. Annual membership starts at $50 for individuals and $80 for families.</p>
+            <h3>Donations</h3>
+            <p>Every contribution helps us maintain our space, support local artists, and expand our educational outreach. Donations of any amount are welcome and tax-deductible.</p>
+
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@monomuse.org">info@monomuse.org</a></p>
+            <p>Phone: (412) 555-0198</p>
+            <p>Address: 5000 Forbes Ave, Pittsburgh, PA 15213</p>
+        </main>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+
+</html>

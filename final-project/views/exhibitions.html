@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
-
 </head>
 
 <body onload="addYear()">
@@ -25,25 +24,38 @@
             <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">&#9776;</a>
         </nav>
         <main class="main">
-            <h3>Digital Reflections</h3>
+            <h1>Current Exhibitions</h1>
+
+            <h2>Digital Reflections</h2>
             <p>Step into a world where mirrors, light, and code collide. Digital Reflections is an immersive
                 installation that uses motion-tracking technology to transform your movements into living art. Every
-                visitor becomes part of the exhibit, creating a unique visual experience that is never the same twice.
-            </p>
+                visitor becomes part of the exhibit, creating a unique visual experience that is never the same twice.</p>
 
-            <h3>Pixels and Paint</h3>
+            <h2>Pixels and Paint</h2>
             <p>Explore the evolution of visual art from canvas to screen. Pixels and Paint showcases side-by-side works
                 from traditional painters and digital artists, revealing surprising connections between brushstrokes and
                 binary code. This exhibition celebrates how the tools change but the human desire to create remains the
                 same.</p>
 
-            <h3>Watch: The Future of Digital Art</h3>
+            <h2>Exhibition Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-display">
+                    <img id="galleryImage" src="https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=700" alt="Interactive light installation in a dark gallery space">
+                </div>
+                <div class="gallery-controls">
+                    <button class="cta gallery-btn" onclick="prevImage()">Previous</button>
+                    <span id="galleryCounter">1 / 3</span>
+                    <button class="cta gallery-btn" onclick="nextImage()">Next</button>
+                </div>
+                <p class="gallery-caption" id="galleryCaption">Digital Reflections - Interactive light installation</p>
+            </div>
+
+            <h2>Watch: The Future of Digital Art</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/AtO699gsFS8?si=tBU7kWdNSgll-MRU"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video about the future of digital art" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></
-                    >
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </main>
         <footer class="footer">
