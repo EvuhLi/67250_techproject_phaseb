@@ -1,4 +1,3 @@
-/* Part 3 & 4: Global Styling with Roboto */
 * {
   padding: 5px;
   margin: 5px;
@@ -11,14 +10,12 @@
   color: #4a2040;
 }
 
-/* Part 5: Logo Styling */
 #logo {
   width: 40px;
   display: block;
   margin: 0;
 }
 
-/* Part 6: Navigation Styling */
 nav {
   display: flex;
   align-items: center;
@@ -41,7 +38,6 @@ nav a:hover {
   color: #e75480;
 }
 
-/* Part 7: Buy Ticket CTA Button */
 .cta {
   background-color: #e75480;
   color: #ffffff;
@@ -53,7 +49,6 @@ nav a:hover {
   display: inline-block;
 }
 
-/* Part 8: Footer Styling */
 footer {
   border-top: 1px solid rgba(231, 84, 128, .3);
   padding: 18px 16px;
@@ -61,7 +56,6 @@ footer {
   color: rgba(74, 32, 64, .6);
 }
 
-/* Part 9: Table Styling */
 th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -75,7 +69,6 @@ tr:nth-child(even) td {
   background-color: #fce4ec;
 }
 
-/* Part 10: Form Styling */
 form * {
   margin: auto;
   text-align: center;

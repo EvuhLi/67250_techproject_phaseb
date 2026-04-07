@@ -16,12 +16,43 @@
   margin: 0;
 }
 
-nav {
-  display: flex;
-  align-items: center;
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
 }
 
-nav a {
+.header {
+  grid-area: header;
+}
+
+.nav_bar {
+  grid-area: nav_bar;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.nav_bar #logo {
+  margin-right: auto;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main_img {
+  grid-area: main-img;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.nav_bar a {
   text-decoration: none;
   color: #b5547a;
   font-weight: 400;
@@ -30,11 +61,11 @@ nav a {
   border-radius: 12px;
 }
 
-nav a:hover {
+.nav_bar a:hover {
   border-color: #f2a6c4;
 }
 
-#navselected {
+.nav_bar a.active {
   color: #e75480;
 }
 
@@ -47,9 +78,10 @@ nav a:hover {
   padding: 12px 24px;
   font-weight: 400;
   display: inline-block;
+  cursor: pointer;
 }
 
-footer {
+.footer {
   border-top: 1px solid rgba(231, 84, 128, .3);
   padding: 18px 16px;
   text-align: center;
@@ -72,4 +104,56 @@ tr:nth-child(even) td {
 form * {
   margin: auto;
   text-align: center;
+}
+
+#longIntro {
+  display: none;
+}
+
+#readLess {
+  display: none;
+}
+
+.toggle-btn {
+  font-size: 0.9em;
+}
+
+.purchase-form {
+  display: none;
+}
+
+.main {
+  padding: 20px 30px;
+}
+
+.main h2, .main h3 {
+  font-weight: 700;
+  color: #e75480;
+  margin-bottom: 8px;
+}
+
+.main p {
+  max-width: 700px;
+  font-weight: 300;
+}
+
+.main img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(231, 84, 128, .15);
+  font-weight: 300;
+}
+
+.main ul li:last-child {
+  border-bottom: none;
 }
