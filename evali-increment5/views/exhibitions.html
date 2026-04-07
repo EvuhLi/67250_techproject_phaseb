@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions - MonoMuse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+
+</head>
+
+<body onload="addYear()">
+    <div class="container">
+        <header class="header"></header>
+        <nav class="nav_bar">
+            <img id="logo" src="../static/image.png" alt="MonoMuse Museum Logo">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <h3>Digital Reflections</h3>
+            <p>Step into a world where mirrors, light, and code collide. Digital Reflections is an immersive
+                installation that uses motion-tracking technology to transform your movements into living art. Every
+                visitor becomes part of the exhibit, creating a unique visual experience that is never the same twice.
+            </p>
+
+            <h3>Pixels and Paint</h3>
+            <p>Explore the evolution of visual art from canvas to screen. Pixels and Paint showcases side-by-side works
+                from traditional painters and digital artists, revealing surprising connections between brushstrokes and
+                binary code. This exhibition celebrates how the tools change but the human desire to create remains the
+                same.</p>
+
+            <h3>Watch: The Future of Digital Art</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/AtO699gsFS8?si=tBU7kWdNSgll-MRU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+
+</html>
